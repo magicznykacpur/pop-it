@@ -173,3 +173,16 @@ body {
     top: 7rem;
   }
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 8rem 3rem 8rem;
+  background-color: #363636;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
