@@ -14,20 +14,53 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("assets/background2.png");
-  min-height: 900px;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-color: #ff2f2d;
+  height: 900px;
 
   a {
     color: black;
     text-decoration: none;
+    font-weight: 400;
   }
 
   .menu {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 4rem 0 6rem;
+    margin: 2rem 8rem 0 8rem;
+    font-size: 1.25rem;
+    font-weight: 600;
   }
-}
 
-.px-3 {
-  padding: 0 3rem 0 3rem;
+  .links {
+    span {
+      padding: 0 3rem 0 3rem;
+    }
+  }
+
+  .pop-it-block {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 8rem 0 8rem;
+    justify-content: center;
+    color: white;
+    /* max-width: 30rem; */
+
+    .pop-it-span {
+      position: relative;
+      left: -16px;
+      font-size: 12rem;
+      font-weight: 900;
+    }
+
+    .antistress-text {
+      max-width: 40rem;
+
+      .antistress-span {
+        font-size: 2rem;
+        font-weight: 900;
+      }
+    }
+  }
 }
