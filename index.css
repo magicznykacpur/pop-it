@@ -52,14 +52,70 @@ body {
       left: -16px;
       font-size: 12rem;
       font-weight: 900;
+
+      @media (width <= 1500px) {
+        font-size: 10rem;
+        left: -10px;
+      }
+
+      @media (width <= 1250px) {
+        font-size: 8rem;
+        left: -6px;
+      }
+
+      @media (width <= 1000px) {
+        font-size: 6rem;
+        left: -2px;
+      }
+
+      @media (width <= 760px) {
+        font-size: 4rem;
+        left: 0;
+      }
+
+      @media (width <= 525px) {
+        font-size: 2rem;
+      }
     }
 
     .antistress-text {
       max-width: 40rem;
 
+      @media (width <= 1250px) {
+        max-width: 30rem;
+      }
+
+      @media (width <= 1000px) {
+        max-width: 25rem;
+      }
+
+      @media (width <= 760px) {
+        max-width: 12rem;
+      }
+
       .antistress-span {
         font-size: 2rem;
         font-weight: 900;
+
+        @media (width <= 1500px) {
+          font-size: 1.85rem;
+        }
+
+        @media (width <= 1250px) {
+          font-size: 1.65rem;
+        }
+
+        @media (width <= 1000px) {
+          font-size: 1.35rem;
+        }
+
+        @media (width <= 760px) {
+          font-size: 1.15rem;
+        }
+
+        @media (width <= 525px) {
+          font-size: 0.85rem;
+        }
       }
     }
 
@@ -68,9 +124,32 @@ body {
       padding: 1.5rem 6rem 1.5rem 6rem;
       background-color: #8ffc60;
       border: none;
-      width: 40%;
+      width: 20rem;
       font-size: 2rem;
       font-weight: 900;
+
+      @media (width <= 1250px) {
+        font-size: 1.85rem;
+        padding: 1.5rem 5rem 1.5rem 5rem;
+      }
+
+      @media (width <= 1000px) {
+        font-size: 1.5rem;
+        width: 16rem;
+        padding: 1.5rem 4rem 1.5rem 4rem;
+      }
+
+      @media (width <= 760px) {
+        font-size: 1.25rem;
+        width: 12rem;
+        padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+      }
+
+      @media (width <= 525px) {
+        font-size: 1rem;
+        width: 10rem;
+        padding: 1.5rem 3rem 1.5rem 3rem;
+      }
     }
 
     .buy-btn:hover {
