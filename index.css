@@ -18,7 +18,7 @@ body {
   background-repeat: no-repeat;
   background-color: #ff2f2d;
   height: 900px;
-  transition: background-image 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 
   a {
     color: black;

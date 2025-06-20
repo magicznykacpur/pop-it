@@ -30,24 +30,29 @@ window.addEventListener("click", (event) => {
 });
 
 let header = document.getElementById("header");
+const bgColors = ["#ffbf69", "#ff2f2d"];
 const backgrounds = ["assets/background.png", "assets/background2.png"];
 let currentBackground = 0;
 
-setInterval(() => {
+const changeHeaderBackground = () => {
   if (currentBackground === backgrounds.length - 1) {
     currentBackground = 0;
-    header.style.backgroundImage = `url(${backgrounds[0]})`;
+    header.style.backgroundImage = `url(${backgrounds[currentBackground]})`;
+    header.style.backgroundColor = bgColors[currentBackground];
   } else {
     currentBackground++;
     header.style.backgroundImage = `url(${backgrounds[currentBackground]})`;
+    header.style.backgroundColor = bgColors[currentBackground];
   }
-}, 3000);
+};
+
+setInterval(changeHeaderBackground, 3000);
 
 let rulesSection = document.getElementById("rules-section");
 const grids = ["assets/bg-grid.png", "assets/bg-grid2.png"];
 let currentRulesSectionBgGrid = 0;
 
-setInterval(() => {
+const changeGrid = () => {
   if (currentRulesSectionBgGrid === grids.length - 1) {
     currentRulesSectionBgGrid = 0;
     rulesSection.style.backgroundImage = `url(${grids[currentRulesSectionBgGrid]})`;
@@ -55,4 +60,6 @@ setInterval(() => {
     currentRulesSectionBgGrid++;
     rulesSection.style.backgroundImage = `url(${grids[currentRulesSectionBgGrid]})`;
   }
-}, 3000);
+};
+
+setInterval(changeGrid, 3000);
