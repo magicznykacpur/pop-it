@@ -28,9 +28,24 @@ body {
   .menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 2rem 8rem 0 8rem;
     font-size: 1.25rem;
     font-weight: 600;
+
+    @media (width <= 760px) {
+      font-size: 1rem;
+    }
+
+    @media (width <= 525px) {
+      font-size: 0.85rem;
+    }
+  }
+
+  .not-a-bubble-header-link {
+    @media (width <= 525px) {
+      display: none;
+    }
   }
 
   .links {
@@ -45,6 +60,13 @@ body {
 
   .hamburger-icon {
     cursor: pointer;
+    margin-left: auto;
+    height: 2rem;
+    width: 2rem;
+
+    @media (width >= 1050px) {
+      display: none;
+    }
   }
 
   .links-menu {
