@@ -58,6 +58,33 @@ body {
     }
   }
 
+  .links-menu {
+    position: absolute;
+    top: 4rem;
+    right: 8rem;
+    align-items: flex-end;
+    background-color: #646464;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    .not-a-bubble-menu-link {
+      @media (width >= 525px) {
+        display: none;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .hamburger-icon {
     cursor: pointer;
     margin-left: auto;
@@ -67,10 +94,6 @@ body {
     @media (width >= 1050px) {
       display: none;
     }
-  }
-
-  .links-menu {
-    display: none;
   }
 
   .pop-it-block {
@@ -362,4 +385,13 @@ body {
   :last-child {
     margin-bottom: 0;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
