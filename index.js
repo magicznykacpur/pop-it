@@ -28,3 +28,31 @@ window.addEventListener("click", (event) => {
     hideLinksMenu();
   }
 });
+
+let header = document.getElementById("header");
+const backgrounds = ["assets/background.png", "assets/background2.png"];
+let currentBackground = 0;
+
+setInterval(() => {
+  if (currentBackground === backgrounds.length - 1) {
+    currentBackground = 0;
+    header.style.backgroundImage = `url(${backgrounds[0]})`;
+  } else {
+    currentBackground++;
+    header.style.backgroundImage = `url(${backgrounds[currentBackground]})`;
+  }
+}, 3000);
+
+let rulesSection = document.getElementById("rules-section");
+const grids = ["assets/bg-grid.png", "assets/bg-grid2.png"];
+let currentRulesSectionBgGrid = 0;
+
+setInterval(() => {
+  if (currentRulesSectionBgGrid === grids.length - 1) {
+    currentRulesSectionBgGrid = 0;
+    rulesSection.style.backgroundImage = `url(${grids[currentRulesSectionBgGrid]})`;
+  } else {
+    currentRulesSectionBgGrid++;
+    rulesSection.style.backgroundImage = `url(${grids[currentRulesSectionBgGrid]})`;
+  }
+}, 3000);
