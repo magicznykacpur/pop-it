@@ -34,9 +34,21 @@ body {
   }
 
   .links {
-    span {
+    a {
       padding: 0 3rem 0 3rem;
     }
+
+    @media (width <= 1050px) {
+      display: none;
+    }
+  }
+
+  .hamburger-icon {
+    cursor: pointer;
+  }
+
+  .links-menu {
+    display: none;
   }
 
   .pop-it-block {
