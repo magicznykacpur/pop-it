@@ -211,11 +211,19 @@ body {
     justify-content: space-between;
     width: 55%;
 
+    @media (width <= 1000px) {
+      flex-direction: column;
+    }
+
     .pop-it-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      @media (width <= 1000px) {
+        margin: 0 0 2rem 0;
+      }
 
       .img {
         height: 10rem;
